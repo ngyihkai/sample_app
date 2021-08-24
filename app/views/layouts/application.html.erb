@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= full_title (yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +10,31 @@
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+  <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+  </div>
+</body>
 </html>
+
+  <!-- <body>
+    <nav>
+      <ul>
+        <li><%= link_to t('home'), root_path %></li>
+      </ul>
+    <nav>
+
+    <%= yield %>
+  </body> -->
+<!-- </html> -->
+
+<!-- views/layouts/application.html.erb -->
+<!-- other code goes here... -->
+
+<nav>
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Feedback', new_feedback_path %></li>
+  </ul>
+</nav>
+

@@ -1,0 +1,6 @@
+# config/settings.yml
+user:
+  email_maxlength: 255
+
+# using
+validates :email, presence: true, length: {maximum: Settings.user.email_maxlength}, format: {with: VALID_EMAIL_REGEX}
