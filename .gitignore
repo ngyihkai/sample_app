@@ -42,7 +42,7 @@ yarn-debug.log*
 # SQLite. Versions 3.8.0 and up are supported.
 config/database.yml
 config/credentials.yml.enc
-
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+
