@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
-  include SessionsHelper
+  protect_from_forgery with: :exception
   before_action :switch_locale
+  include SessionsHelper
+
 
   private
   def switch_locale
