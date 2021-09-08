@@ -50,3 +50,7 @@ en:
   message: "message"
   error_acc_unacti: "Account not activated. Check your email for the activation link."
   pls_chk_email: "Please check your email to activate your account."
+  forgot_pass: "Forgot password"
+  email_sent: "Email sent"
+  email_not_found: "Email is not found"
+  password_reset: "Password reset"
