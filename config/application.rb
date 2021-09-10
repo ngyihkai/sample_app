@@ -12,6 +12,7 @@ module SampleApp
     config.load_defaults 6.1
 
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
+    config.action_view.embed_authenticity_token_in_remote_forms = true
     I18n.available_locales = [:en, :ja]
   end
 end
